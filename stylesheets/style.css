@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+* {
+    margin: 0;
+    padding: O;
+  }
+
+div {
+  transition-property: opacity, left, top, height;
+  transition-duration: 3s, 5s;
+}
+
+body {
+  background-color: #edecee7d;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #588157;
+  margin: 0% 5%;
+}
+
+.contact-bar {
+  margin: 16px;
+}
+
+.contact-bar-icone {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.contact-bar .fa-brands{
+    font-size: 30px;
+    color: black;
+    transition: 0.5s ease;
+  }
+
+.contact-bar img {
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: 0.5s ease;
+}
+
+.contact-bar a:hover {
+  transform: scale(2);
+}
+
+.nav-list {
+  width: auto;
+  margin-left: 0%;
+  margin-right: auto;
+  display: flex;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+.nav-list li a:hover {
+  color: #588157;
+}
+
+.title {
+  text-align: center;
+  width: 62%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,serif;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.profilePic {
+  width: 40%;
+  height: 35%;
+  border-radius: 50%;
+  border: 15px solid white
+}
+
+.left-column {
+  width: 20%;
+  text-align: left;
+}
+
+.right-column {
+  width: 20%;
+  text-align: right;
+}
+
+.card {
+  padding: 10%;
+}
+
+.card h1, h4 {
+  color:#0000009e;
+}
+
+.card h3 {
+  font-size: medium;
+}
+
+
+.subtitle {
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.curriculum-card {
+  background-color: #a3b18a38;
+  box-shadow: 1px ;
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2%;
+}
+
+.banner {
+  background-color: #a3b18a38;
+  box-shadow: 1px ;
+  margin: 5%;
+  border-radius: 2%;
+
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  *{
+    -webkit-animation:all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 1s ease;
+  }
+
+  .container {
+    width: 700px;
+  }
+
+  .contact-bar-icone {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 115px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  *{
+    -webkit-animation:all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    tra
+    nsition: all 1s ease;
+  }
+  .container {
+    width: 500px;
+    }
+
+  .contact-bar-icone {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .nav-list li a {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .nav-list li a {
+    font-size: 1rem;
+  }
+  .nav-list li {
+    list-style: none;
+    padding: 8px 16px;
+  }
+  .contact-bar .fa-brands{
+    font-size: 15px;
+    color: black;
+  }
+  .contact-bar img {
+    height: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+  .contact-bar-icone{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
